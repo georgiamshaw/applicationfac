@@ -1,5 +1,91 @@
-h1 {
+html {
+  display: block;
+}
+
+body {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 9%;
+  top: 0;
+  left: 0;
+  background-color: rgb(249, 249, 248);
+  display: flex;
+}
+
+.home-button-wrap {
+  display: inline;
+  margin: 6% 4%;
+  width: 20%;
+  height: 50%;
+}
+
+.home-button {
   font-family: 'Luckiest Guy', cursive;
-  font-size: 100px;
-  color: black;
+  font-style: italic;
+  font-size: 120px;
+  color: rgb(29, 39, 39);
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: rgb(207, 210, 210);
+  outline: none;
+  border: none;
+}
+
+.menu-button-wrap {
+  margin: 6% 36%;
+  width: 40%;
+  height: 50%;
+}
+
+.menu-button {
+  font-family: 'Luckiest Guy', cursive;
+  font-style: italic;
+  font-size: 120px;
+  color: rgb(29, 39, 39);
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: rgb(207, 210, 210);
+  outline: none;
+  border: none;
+}
+
+.container-1 {
+  width: 100%;
+  height: 2150px;
+  background-color: rgb(244, 244, 244);
+}
+
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  color: rgb(47, 79, 79);
+  font-size: 200px;
+  text-align: center;
+  padding: 5%;
+  padding-top: 55%;
+}
+
+h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  color: rgb(18, 31, 31);
+  text-align: center;
+  padding: 3%;
+  padding-bottom: 0%;
+}
+
+h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 70px;
+  color: rgb(18, 31, 31);
+  text-align: center;
 }
