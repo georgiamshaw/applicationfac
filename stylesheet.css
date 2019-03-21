@@ -24,17 +24,18 @@ nav {
 }
 
 .home-button {
-  font-family: 'Luckiest Guy', cursive;
-  font-style: italic;
+  font-family: 'Allerta Stencil', sans-serif;
   font-size: 120px;
   color: rgb(29, 39, 39);
   cursor: pointer;
+  border: none;
 }
 
 .home-button:hover {
   background-color: rgb(207, 210, 210);
   outline: none;
   border: none;
+  transition: 0.5s ease;
 }
 
 .menu-button-wrap {
@@ -44,17 +45,18 @@ nav {
 }
 
 .menu-button {
-  font-family: 'Luckiest Guy', cursive;
-  font-style: italic;
+  font-family: 'Allerta Stencil', sans-serif;
   font-size: 120px;
   color: rgb(29, 39, 39);
   cursor: pointer;
+  border: none;
 }
 
 .menu-button:hover {
   background-color: rgb(207, 210, 210);
   outline: none;
   border: none;
+  transition: 0.5s ease;
 }
 
 .container-1 {
@@ -64,7 +66,7 @@ nav {
 }
 
 h1 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PT Mono', monospace;
   color: rgb(47, 79, 79);
   font-size: 200px;
   text-align: center;
@@ -73,7 +75,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'PT Mono', monospace;
   font-weight: bolder;
   font-size: 70px;
   color: rgb(18, 31, 31);
@@ -83,7 +85,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'PT Mono', monospace;
   font-weight: bolder;
   font-size: 70px;
   color: rgb(18, 31, 31);
@@ -103,7 +105,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PT Mono', monospace;
   padding: 5%;
   padding-top: 10%;
   color: rgb(88, 114, 114);
@@ -121,6 +123,9 @@ h4 {
   margin: 15% 10%;
   cursor: pointer;
 
+}
+p {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .project-work-2 {
@@ -160,7 +165,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Luckiest Guy', cursive;
+  font-family: 'PT Mono', monospace;
   font-size: 100px;
   text-align: center;
 }
@@ -171,4 +176,44 @@ h5 {
 
 #cfg {
   font-size: 80px;
+}
+
+/* Image carousel */
+
+.image-carousel-container {
+  max-width: 200px;
+  max-height: 200px;
+  position: relative;
+  margin: auto;
+}
+
+.image-inside-carousel {
+  display: none;
+}
+
+.previous-arrow, .next-arrow {
+  cursor: pointer;
+  position: absolute;
+  border-radius: 0 3px 3px 0;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+
+.previous-arrow:hover, .next-arrow:hover {
+  background-color: rgba(189, 195, 199, 1);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(108, 122, 137, 1);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(108, 122, 137);
 }
