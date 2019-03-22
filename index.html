@@ -5,23 +5,39 @@
   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Work+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="script.js"></script>
   <link href="Allerta_Stencil.AllertaStencil-Regular.ttf">
 <head>
+  <title>GS</title>
   <body>
     <header>
       <nav>
-        <div class="home-button-wrap">
-        <button class="home-button">GS</button>
-      </div>
+        <a href="index.html" class="home-button-wrap">
+          <button class="home-button">GS</button>
+        </a>
       <div class="menu-button-wrap">
         <button class="menu-button">Menu</button>
       </div>
       </nav>
     </header>
       <section class="container-1">
-        <h1>Georgia Shaw</h1>
-        <h2>Founders and Coders application<br><br>April 2019</h2>
+        <h1 id="typeWriterHeading1"></h1>
+        <h2>Founders and Coders application.<br>April 2019.</h2>
       </section>
+      <script>
+      var i = 0;
+      var typeWriterH1 = "Georgia Shaw.";
+      var speed = 110;
+
+      function typeWriter() {
+        if (i < typeWriterH1.length) {
+          document.getElementById("typeWriterHeading1").innerHTML += typeWriterH1.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      } typeWriter();
+
+      </script>
       <section class="container-2">
         <div class="project-work-title">
           <h4>Projects</h4>
@@ -41,6 +57,7 @@
         <div class="project-work-5">
           <h5 id="cfg">Code First Girls Level 1: HTML and CSS</h5>
         </div>
+
       </section>
   </body>
 
@@ -51,6 +68,7 @@
   <div class="image-inside-carousel">
     <img src="lions.jpg" style="width:100%">
   </div>
+
   <div class="image-inside-carousel">
     <img src="playfulLion.jpg" style="width:100%">
   </div>
