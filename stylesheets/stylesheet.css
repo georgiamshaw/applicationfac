@@ -13,8 +13,20 @@ nav {
   height: 10%;
   top: 0;
   left: 0;
-  background-color: rgb(249, 249, 248);
+
   display: flex;
+}
+
+#nav-content {
+  background-color: none;
+}
+
+.nav-scroll {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(249, 249, 248);
+  transition: 0.8s ease;
 }
 
 .home-button-wrap {
@@ -29,7 +41,7 @@ nav {
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
-  background-color: rgb(249, 249, 248);
+  background-color: inherit;
   outline: none;
   padding-bottom: 7px;
 }
@@ -53,7 +65,7 @@ nav {
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
-  background-color: rgb(249, 249, 248);
+  background-color: inherit;
   outline: none;
 }
 
