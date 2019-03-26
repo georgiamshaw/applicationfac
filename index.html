@@ -14,9 +14,14 @@
         <a href="index.html" class="home-button-wrap">
           <button class="home-button">GS</button>
         </a>
-      <div class="menu-button-wrap">
-        <button class="menu-button">Menu</button>
-      </div>
+        <div class="menu-button-wrap">
+          <button onclick="dropDownFunction()" class="menu-button">Menu</button>
+          <div id="dropDownMenu" class="dropdown-content">
+                  <a href="#about" class="menu-drop">About Me</a>
+                  <a href="#photos" class="menu-drop">Photo<br>Gallery</a>
+                  <a href="#links" class="menu-drop">Links</a>
+          </div>
+        </div>
       </nav>
     </header>
 </head>
@@ -25,7 +30,7 @@
         <h2>Founders and Coders Application.<br>April 2019.</h2>
       </section>
       <section class="container-2">
-        <div class="about-me">
+        <div class="about-me" id="about">
           <h3>About Me</h3>
         </div>
         <div class="about-me-text">
@@ -39,7 +44,7 @@
         </div>
       </section>
       <section class="container-3">
-        <div class="photo-gallery">
+        <div class="photo-gallery" id="photos">
           <h3>Photo Gallery</h3>
         </div>
         <div class="image-carousel-container">
@@ -66,7 +71,7 @@
         </div>
       </section>
       <section class="container-4">
-        <div class="website-links">
+        <div class="website-links" id="links">
           <h3>Links</h3>
         </div>
         <div class="project-work">
