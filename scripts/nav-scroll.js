@@ -1,12 +1,9 @@
 
-window.onscroll = function() {navScrolling()};
-
-
 var header = document.getElementById("nav-content");
-
-
 var sticking = header.offsetTop;
 
+
+window.onscroll = function() {navScrolling()};
 
 function navScrolling() {
   if (window.pageYOffset > sticking) {
