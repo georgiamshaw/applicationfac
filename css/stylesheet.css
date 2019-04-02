@@ -9,12 +9,14 @@ body {
 }
 
 nav {
-  position: fixed;
+  position: relative;
   width: 100vw;
   height: 10vh;
   top: 0;
   left: 0;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
 #nav-content {
@@ -26,25 +28,30 @@ nav {
   top: 0;
   width: 100vw;
   background-color: rgb(249, 249, 248);
-  transition: 0.8s ease;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .home-button-wrap {
-  display: inline;
-  position: absolute;
-  margin-left: 2%;
+  display: flex;
+  position: relative;
+  margin: auto;
+  order: 1;
+  flex: 0 1 auto;
+  text-decoration: none;
+  background-color: blue;
+  width: 50%;
 }
 
 .home-button {
+  display: flex;
+  position: relative;
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 18vw;
+  font-size: 5vw;
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
   background-color: inherit;
   outline: none;
-  padding-bottom: 5px;
 }
 
 .home-button:hover {
@@ -56,15 +63,21 @@ nav {
 }
 
 .menu-button-wrap {
-  display: inline;
-  position: absolute;
-  margin-left: 85%;
+  display: flex;
+  position: relative;
+  margin: auto;
+  order: 2;
+  flex: 0 1 auto;
+  text-decoration: none;
+  background-color: red;
+  width: 50%;
 }
 
 .menu-button {
+  display: flex;
+  position: relative;
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 4.5vw;
-  padding-bottom: 7px;
+  font-size: 5vw;
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
@@ -74,6 +87,8 @@ nav {
 
 .menu-button:hover {
   background-color: rgb(44, 54, 61);
+  display: flex;
+  position: relative;
   outline: none;
   border: none;
   transition: 0.5s ease;
