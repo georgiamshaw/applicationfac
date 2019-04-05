@@ -6,7 +6,7 @@ var typeWriterH2 = "Founders and Coders Application.";
 var k = 0;
 var typeWriterH22 = "April 2019.";
 var speed = 90;
-var speed1 = 70;
+var speed1 = 65;
 
 function typeWriter() {
   if (i < typeWriterH1.length) {
