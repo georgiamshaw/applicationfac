@@ -75,13 +75,13 @@ nav {
 }
 
 /* BURGER */
-.container {
+.burger-container {
   display: inline-block;
   cursor: pointer;
   justify-content: center;
 }
 
-.container:hover {
+.burger-container:hover {
   outline: none;
   border: none;
   transition: 0.5s ease;
@@ -351,7 +351,12 @@ Drop down menu
 }
 
 /* MEDIA QUERIES -------- */
-@media (min-width: 400px) {
+@media (min-width: 500px) {
+
+  .burger-container {
+    visibility: hidden;
+  }
+
   .menu-button {
     display: flex;
     position: relative;
