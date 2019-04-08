@@ -74,28 +74,42 @@ nav {
   justify-content: flex-end;
 }
 
-.menu-button {
-  display: flex;
-  position: relative;
-  font-family: 'Allerta Stencil', sans-serif;
-  font-size: 5vw;
-  color: rgb(29, 39, 39);
+/* BURGER */
+.container {
+  display: inline-block;
   cursor: pointer;
-  border: none;
-  background-color: inherit;
-  outline: none;
-  margin-right: 1rem;
+  justify-content: center;
 }
 
-.menu-button:hover {
-  background-color: rgb(44, 54, 61);
-  display: flex;
-  position: relative;
+.container:hover {
   outline: none;
   border: none;
   transition: 0.5s ease;
-  color: white;
+  background-color: rgb(44, 54, 61);
 }
+
+.bar1, .bar2, .bar3 {
+  width: 42px;
+  height: 6px;
+  background-color: rgb(29, 39, 39);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px,6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+}
+/* BURGER */
 
 .dropdown-content {
   cursor: pointer;
@@ -337,14 +351,30 @@ Drop down menu
 }
 
 /* MEDIA QUERIES -------- */
-@media (max-width: 400px) {
-  . {
+@media (min-width: 400px) {
+  .menu-button {
+    display: flex;
+    position: relative;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 5vw;
+    color: rgb(29, 39, 39);
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+    outline: none;
+    margin-right: 1rem;
+  }
 
+  .menu-button:hover {
+    background-color: rgb(44, 54, 61);
+    display: flex;
+    position: relative;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+    color: white;
   }
 }
-
-
-
 
 
 /* ========================
