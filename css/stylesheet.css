@@ -11,15 +11,17 @@ body {
 /* NAV BAR */
 
 nav {
-  position: relative;
-  width: 100vw;
-  height: 10.5vh;
+  position: fixed;
+  padding: 10px 0;
   top: 0;
   left: 0;
+  right: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   z-index: 1;
+  -webkit-transition: background-color 0.5s ease-in-out; /* Safari */
+  transition: background-color 0.5s ease-in-out;
 }
 
 #nav-content {
@@ -29,7 +31,7 @@ nav {
 .nav-scroll {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(249, 249, 248);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -37,20 +39,20 @@ nav {
 /* HOME BUTTON */
 
 .home-button-wrap {
-  display: flex;
+  /* display: flex;
   position: relative;
   margin: auto;
   order: 1;
   flex: 0 1 auto;
   text-decoration: none;
-  width: 50%;
+  width: 50%; */
 }
 
 .home-button {
-  display: flex;
-  position: relative;
+  /* display: flex;
+  position: relative; */
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 5vw;
+  font-size: 40px;
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
@@ -70,20 +72,22 @@ nav {
 /*MENU BURGER*/
 
 .menu-button-wrap {
-  display: flex;
-  position: relative;
+  /* display: flex; */
+  /* position: relative;
   margin: auto;
   order: 2;
   flex: 0 1 auto;
   text-decoration: none;
   width: 50%;
-  justify-content: flex-end;
+  justify-content: flex-end; */
 }
 
 /* BURGER */
 
 .burger-container {
   display: inline-block;
+  margin-right: 1rem;
+  margin-top: 2px;
   cursor: pointer;
   justify-content: center;
 }
@@ -92,7 +96,6 @@ nav {
   outline: none;
   border: none;
   transition: 0.5s ease;
-  background-color: rgb(44, 54, 61);
 }
 
 .bar1, .bar2, .bar3 {
@@ -141,6 +144,7 @@ nav {
 /*FIRST CONTAINER*/
 
 .container-1 {
+  padding-top: 100px;
   width: 100%;
   height: 80vh;
   background-color: rgb(244, 244, 244);
@@ -294,12 +298,14 @@ Drop down menu
 /* Dropdown Button */
 .menu-button {
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 5vw;
+  font-size: 40px;
   color: rgb(29, 39, 39);
   cursor: pointer;
   border: none;
   background-color: inherit;
   outline: none;
+  margin-right: 1rem;
+  display: none;
 }
 
 /* Dropdown button on hover
@@ -317,7 +323,6 @@ Drop down menu
     cursor: pointer;
   position: absolute;
   background-color: #f1f1f1;
-  width: 191px;
   box-shadow: 0px 12px 30px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -326,10 +331,12 @@ Drop down menu
 .dropdown-content a {
   font-family: 'Allerta Stencil', sans-serif;
   color: rgb(29, 39, 39);
-  padding: 10px 16px;
+  padding: 10px 12px;
+  margin: 0 auto;
   text-decoration: none;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
+  width: calc(100% - 24px);
 }
 
 /* Change colour of the dropdown links on hover */
@@ -351,8 +358,13 @@ Drop down menu
 @media (min-width: 500px) {
 
   .burger-container {
-    visibility: hidden;
+    display: none;
   }
+
+  .menu-button {
+    display: block;
+  }
+
 
 @media (min-width: 1000px) and (max-width: 1099px) {
   .project-work {
@@ -374,13 +386,9 @@ Drop down menu
   }
 }
 
-@media (min-width: 500px) {
-  .burger-container {
-    visibility: hidden;
-  }
 
-  .menu-button {
-    display: flex;
+
+  /* .menu-button {
     position: relative;
     font-family: 'Allerta Stencil', sans-serif;
     font-size: 5vw;
@@ -390,7 +398,8 @@ Drop down menu
     background-color: inherit;
     outline: none;
     margin-right: 1rem;
-  }
+    float: right;
+  } */
 
   .menu-button:hover {
     background-color: rgb(44, 54, 61);
@@ -443,7 +452,7 @@ Drop down menu
   /* Fade in the currently hovered item */
   }
 
-  .menu-button {
+  /* .menu-button {
     display: flex;
     position: relative;
     font-family: 'Allerta Stencil', sans-serif;
@@ -465,7 +474,7 @@ Drop down menu
     transition: 0.5s ease;
     color: white;
   }
-}
+} */
 
 /* Image carousel */
 
