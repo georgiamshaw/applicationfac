@@ -13,9 +13,9 @@
   <body>
     <header>
       <nav id="nav-content">
-        <a href="index.html" class="home-button-wrap">
-          <button class="home-button">GS</button>
-        </a>
+        <div class="home-button-wrap">
+          <button class="home-button"><a href="index.html" id="home-link">GS</a></button>
+        </div>
         <div class="menu-button-wrap">
           <div class="burger-container" onclick="burger(this)">
             <div class="bar1"></div>
@@ -24,7 +24,7 @@
           </div>
           <button onclick="dropDownFunction()" class="menu-button">Menu</button>
           <div id="dropDownMenu" class="dropdown-content">
-                  <a href="#about" class="menu-drop">About Me</a>
+                  <a href="#about-me" class="menu-drop">About Me</a>
                   <a href="#photos" class="menu-drop">Photo<br>Gallery</a>
                   <a href="#links" class="menu-drop">Links</a>
           </div>
@@ -36,8 +36,8 @@
       <h2 id="typeWriterHeading2"></h2>
       <h2 id="typeWriterHeading22"></h2>
     </section>
-    <section id="about">
-      <div class="about-me">
+    <section class="container-2">
+      <div id="about-me">
         <h3>About Me</h3>
       </div>
       <div class="about-me-text">
@@ -83,27 +83,27 @@
       </div>
       <div id="wrap-links">
         <div class="project-work">
-          <img src="fcc.svg" style="width:100%" class="icon">
           <a href="https://www.freecodecamp.org/gigi.io">
-          <h4>Freecodecamp</h4>
+          <img src="fcc.svg" style="width:100%" class="icon">
+          <h4 id="fcc">Freecodecamp</h4>
           </a>
         </div>
         <div class="project-work">
-          <img src="codewars.svg" style="width:100%" class="icon">
           <a href="https://www.codewars.com/users/georgiamshaw">
-          <h4>Code Wars</h4>
+          <img src="codewars.svg" style="width:100%" class="icon">
+          <h4 id="codewars">Code Wars</h4>
           </a>
         </div>
         <div class="project-work">
-          <img src="github.svg" style="width:100%" class="icon">
           <a href="https://github.com/georgiamshaw">
-          <h4>GitHub</h4>
+          <img src="github.svg" style="width:100%" class="icon">
+          <h4 id="github">GitHub</h4>
           </a>
         </div>
         <div class="project-work">
-          <img src="cfg.svg" style="width:100%" class="icon">
           <a href="https://georgiamshaw.github.io/Wine/index.html">
-          <h4 id="cfg">Code First Girls Level 1: HTML and CSS</h4>
+          <img src="cfg.svg" style="width:100%" class="icon" id="cfg-icon">
+          <h4 id="cfg">Code First Girls<br>Level 1: HTML and CSS</h4>
           </a>
         </div>
       </div>
