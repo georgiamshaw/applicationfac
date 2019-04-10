@@ -59,15 +59,13 @@ nav {
   background-color: inherit;
   outline: none;
   margin-left: 1rem;
-  padding: 10px 4px;
+  padding: 11px 5px 10px 4px;
 }
 
 .home-button:hover {
-  background-color: #4056A1;
   outline: none;
   border: none;
   transition: 0.5s ease;
-  color: white;
 }
 
 /*MENU BURGER*/
@@ -88,10 +86,10 @@ nav {
 .burger-container {
   display: inline-block;
   margin-right: 1rem;
-  margin-top: 2px;
+  margin-top: 5px;
   cursor: pointer;
   justify-content: center;
-  padding: 15px 8px;
+  padding: 13px 8px;
 }
 
 .burger-container:hover {
@@ -103,7 +101,7 @@ nav {
 .bar1, .bar2, .bar3 {
   width: 45px;
   height: 6px;
-  background-color: rgb(29, 39, 39);
+  background-color: #4056A1;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -341,10 +339,6 @@ a {
   color: #4056A1;
 }
 
-#home-link:hover {
-  color:white;
-}
-
 /* ========================
 Drop down menu
 
@@ -359,15 +353,13 @@ Drop down menu
   outline: none;
   margin-right: 1rem;
   display: none;
-  padding: 10px 4px;
+  padding: 11px 4px 10px;
 }
 
 .menu-button:hover, .menu-button:focus {
-  background-color: #4056A1;
   outline: none;
   border: none;
   transition: 0.5s ease;
-  color: white;
 }
 
 /* Dropdown Content - hidden */
@@ -418,6 +410,28 @@ Drop down menu
   .menu-button {
     display: block;
   }
+
+  .menu-button:hover, .menu-button:focus {
+    background-color: #4056A1;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+    color: white;
+  }
+
+  .home-button:hover {
+    background-color: #4056A1;
+    outline: none;
+    border: none;
+    transition: 0.5s ease;
+    color: white;
+  }
+
+  #home-link:hover {
+    color:white;
+  }
+
+}
 
 
 @media (min-width: 1000px) and (max-width: 1099px) {
