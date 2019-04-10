@@ -6,13 +6,13 @@ html {
 
 body {
   display: block;
+  background-color: #f6e3db;
 }
 
 /* NAV BAR */
 
 nav {
   position: fixed;
-  padding: 10px 0;
   top: 0;
   left: 0;
   right: 0;
@@ -20,8 +20,8 @@ nav {
   flex-flow: row wrap;
   justify-content: space-between;
   z-index: 1;
-  -webkit-transition: background-color 0.5s ease-in-out; /* Safari */
-  transition: background-color 0.5s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out; /* Safari */
+  transition: 0.3s ease-in-out;
 }
 
 #nav-content {
@@ -32,7 +32,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgb(249, 249, 248);
+  background-color: #f6e3db;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -52,17 +52,18 @@ nav {
   /* display: flex;
   position: relative; */
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 40px;
-  color: rgb(29, 39, 39);
+  font-size: 50px;
+  color: #4056A1;
   cursor: pointer;
   border: none;
   background-color: inherit;
   outline: none;
   margin-left: 1rem;
+  padding: 10px 4px;
 }
 
 .home-button:hover {
-  background-color: rgb(44, 54, 61);
+  background-color: #4056A1;
   outline: none;
   border: none;
   transition: 0.5s ease;
@@ -90,6 +91,7 @@ nav {
   margin-top: 2px;
   cursor: pointer;
   justify-content: center;
+  padding: 15px 8px;
 }
 
 .burger-container:hover {
@@ -99,7 +101,7 @@ nav {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 42px;
+  width: 45px;
   height: 6px;
   background-color: rgb(29, 39, 39);
   margin: 6px 0;
@@ -107,8 +109,8 @@ nav {
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) translate(-9px,6px);
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-7.5px, 7px);
+  -webkit-transform: rotate(-45deg) translate(-7.5px, 7px);
 }
 
 .change .bar2 {
@@ -116,8 +118,8 @@ nav {
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
-   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-9px, -10px);
+   -webkit-transform: rotate(45deg) translate(-9px, -10px);
 }
 
 /* BURGER */
@@ -125,7 +127,7 @@ nav {
 .dropdown-content {
   cursor: pointer;
   border: none;
-  color: rgb(29, 39, 39);
+  color: #4056A1;
   outline: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -139,6 +141,8 @@ nav {
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 40px;
   padding: 10% 1%;
+  width: 100%;
+  overflow: auto;
 }
 
 /*FIRST CONTAINER*/
@@ -146,13 +150,13 @@ nav {
 .container-1 {
   padding-top: 100px;
   width: 100%;
-  height: 80vh;
-  background-color: rgb(244, 244, 244);
+  height: 800px;
+  background-color: #EDC7B7;
 }
 
 h1 {
   font-family: 'PT Mono', monospace;
-  color: rgb(47, 79, 79);
+  color: #f24f36;
   font-size: 10vh;
   text-align: left;
   margin: 10% 3% 5% 3%;
@@ -161,7 +165,7 @@ h1 {
 h2 {
   font-family: 'PT Mono', monospace;
   font-size: 6vh;
-  color: rgb(18, 31, 31);
+  color: #f3624c;
   text-align: left;
   margin: 6% 3% 8% 3%;
 }
@@ -180,21 +184,34 @@ h3 {
   font-family: 'PT Mono', monospace;
   font-weight: bolder;
   font-size: 70px;
-  color: rgb(18, 31, 31);
   text-align: left;
-  padding: 3%;
-  padding-top: 10%;
+  margin: 0;
+}
+
+#about-me-title {
+  color: #629b62;
+}
+
+#photo-gallery-title {
+  color: #ffdb19;
+}
+
+#links-title {
+ color: #5366aa;
 }
 
 .container-2 {
   width: 100%;
   height: 100vh;
-  background-color: rgb(234, 237, 237);
+  background-color: #fff7b7;
+}
+
+p {
+  color: #5ba05b;
 }
 
 .about-me-text {
   font-family: 'Nanum Gothic', sans-serif;
-  padding: 0% 5%;
   font-size: 20px;
 }
 
@@ -203,7 +220,7 @@ h3 {
 .container-3 {
   width: 100%;
   height: 100vh;
-  background-color: rgb(244, 244, 244);
+  background-color: #b2d8b2;
 }
 
 /*FOURTH CONTAINER*/
@@ -211,7 +228,12 @@ h3 {
 .container-4 {
   width: 100%;
   height: 100vh;
-  background-color: rgb(234, 237, 237);
+  background-color: #EDC7B7;
+}
+
+.container-text {
+  margin: 20px;
+  padding: 10px;
 }
 
 .project-work-title {
@@ -224,7 +246,7 @@ h4 {
   font-family: 'Nanum Gothic', sans-serif;
   display: flex;
   position: relative;
-  color: rgb(88, 114, 114);
+  color: white;
   text-align: center;
   font-size: 2rem;
   margin-top: 2.5rem;
@@ -249,7 +271,6 @@ h4 {
   position: relative;
   width: 17rem;
   height: 17rem;
-  background-color: rgb(214, 215, 215);
   cursor: pointer;
   margin: 3rem 2rem;
   border-radius: 3%;
@@ -266,6 +287,38 @@ h4 {
   box-shadow: 0px 35px 50px 0px rgba(63,63,65,0.4);
   transition: 0.7s ease;
   background-color: rgb(44, 54, 61);
+}
+
+#project-work-fcc {
+  background-color: #8693c4;
+}
+
+#project-work-fcc:hover {
+  background-color: #3b487a;
+}
+
+#project-work-cw {
+ background-color: #b9c1dd;
+}
+
+#project-work-cw:hover {
+  background-color: #5366aa;
+}
+
+#project-work-gh {
+  background-color: #9ea8cf;
+}
+
+#project-work-gh:hover {
+  background-color: #425188;
+}
+
+#project-work-cfg {
+  background-color: #6475b2;
+}
+
+#project-work-cfg:hover {
+  background-color: #2f3961;
 }
 
 .icon {
@@ -285,7 +338,7 @@ a {
 }
 
 #home-link:visited {
-  color:rgb(29, 39, 39);
+  color: #4056A1;
 }
 
 #home-link:hover {
@@ -298,50 +351,51 @@ Drop down menu
 /* Dropdown Button */
 .menu-button {
   font-family: 'Allerta Stencil', sans-serif;
-  font-size: 40px;
-  color: rgb(29, 39, 39);
+  font-size: 50px;
+  color: #4056A1;
   cursor: pointer;
   border: none;
   background-color: inherit;
   outline: none;
   margin-right: 1rem;
   display: none;
+  padding: 10px 4px;
 }
 
-/* Dropdown button on hover
 .menu-button:hover, .menu-button:focus {
-  background-color: rgb(44, 54, 61);
+  background-color: #4056A1;
   outline: none;
   border: none;
   transition: 0.5s ease;
   color: white;
-} */
+}
 
 /* Dropdown Content - hidden */
 .dropdown-content {
   display: none;
-    cursor: pointer;
+  cursor: pointer;
   position: absolute;
   background-color: #f1f1f1;
   box-shadow: 0px 12px 30px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width: 145px;
 }
 
 /* Options in the dropdown */
 .dropdown-content a {
   font-family: 'Allerta Stencil', sans-serif;
-  color: rgb(29, 39, 39);
+  color: #4056A1;
   padding: 10px 12px;
   margin: 0 auto;
   text-decoration: none;
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   width: calc(100% - 24px);
 }
 
 /* Change colour of the dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: rgb(65, 74, 80);
+  background-color: #6677b3;
   outline: none;
   border: none;
   transition: 0.4s ease;
@@ -402,7 +456,7 @@ Drop down menu
   } */
 
   .menu-button:hover {
-    background-color: rgb(44, 54, 61);
+    background-color: #4056A1;
     display: flex;
     position: relative;
     outline: none;
@@ -473,8 +527,8 @@ Drop down menu
     border: none;
     transition: 0.5s ease;
     color: white;
-  }
-} */
+  }*/
+}
 
 /* Image carousel */
 
@@ -491,7 +545,7 @@ Drop down menu
 
 
 /* Position the "next button" to the right */
-
+/*
 .previous-arrow {
   cursor: pointer;
   position: absolute;
@@ -499,7 +553,8 @@ Drop down menu
   padding: 10px;
   transition: 0.5s ease;
   top: 50%;
-  width: auto;
+  width: 10px;
+  height: 10px;
   margin-top: -22px;
   padding: 16px;
 }
@@ -535,4 +590,4 @@ Drop down menu
 
 .active, .dot:hover {
   background-color: rgb(108, 122, 137);
-}
+}*/
