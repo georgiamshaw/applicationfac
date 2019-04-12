@@ -1,12 +1,11 @@
 html {
   display: block;
-  background-color: rgb(244, 244, 244);
+  background-color: #fffff0;
   scroll-behavior: smooth;
 }
 
 body {
   display: block;
-  background-color: #f6e3db;
 }
 
 /* NAV BAR */
@@ -32,7 +31,15 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #f6e3db;
+  background-color: #fffff0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#nav-move {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: blue;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -53,7 +60,7 @@ nav {
   position: relative; */
   font-family: 'Allerta Stencil', sans-serif;
   font-size: 50px;
-  color: #4056A1;
+  color: #FFFFF0;
   cursor: pointer;
   border: none;
   background-color: inherit;
@@ -84,15 +91,18 @@ nav {
 /* BURGER */
 
 .burger-container {
-  display: inline-block;
   margin-right: 1rem;
   margin-top: 5px;
-  cursor: pointer;
-  justify-content: center;
   padding: 13px 8px;
 }
 
-.burger-container:hover {
+.bar-container {
+  display: inline-block;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.bar-container:hover {
   outline: none;
   border: none;
   transition: 0.5s ease;
@@ -147,23 +157,23 @@ nav {
 
 .container-1 {
   padding-top: 100px;
-  width: 100%;
+  width: 103%;
   height: 800px;
-  background-color: #EDC7B7;
+  background-color: #fffff0;
 }
 
 h1 {
   font-family: 'PT Mono', monospace;
-  color: #f24f36;
-  font-size: 10vh;
+  color: #FF4900;
+  font-size: 73px;
   text-align: left;
   margin: 10% 3% 5% 3%;
 }
 
 h2 {
   font-family: 'PT Mono', monospace;
-  font-size: 6vh;
-  color: #f3624c;
+  font-size: 44px;
+  color: #FF5A19;
   text-align: left;
   margin: 6% 3% 8% 3%;
 }
@@ -184,24 +194,25 @@ h3 {
   font-size: 70px;
   text-align: left;
   margin: 0;
+  padding: 8% 3% 3%;
 }
 
 #about-me-title {
-  color: #629b62;
+  color: #FFFFF0;
 }
 
 #photo-gallery-title {
-  color: #ffdb19;
+color: #FF4900;;
 }
 
 #links-title {
- color: #5366aa;
+ color: #FFFFF0;
 }
 
 .container-2 {
   width: 100%;
   height: 100vh;
-  background-color: #fff7b7;
+  background-color: #9BCEF5;
 }
 
 p {
@@ -218,20 +229,20 @@ p {
 .container-3 {
   width: 100%;
   height: 100vh;
-  background-color: #b2d8b2;
+  background-color: #fffff0;
 }
 
 /*FOURTH CONTAINER*/
 
 .container-4 {
   width: 100%;
-  height: 100vh;
-  background-color: #EDC7B7;
+  height: 1650px;
+  background-color: #9BCEF5;
 }
 
 .container-text {
-  margin: 20px;
-  padding: 10px;
+  margin: 30px 0px;
+  padding: 2px;
 }
 
 .project-work-title {
@@ -244,7 +255,7 @@ h4 {
   font-family: 'Nanum Gothic', sans-serif;
   display: flex;
   position: relative;
-  color: white;
+  color: #FFFFF0;
   text-align: center;
   font-size: 2rem;
   margin-top: 2.5rem;
@@ -253,7 +264,7 @@ h4 {
 
 #cfg {
   font-size: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0.9rem;
 }
 
 #wrap-links {
@@ -391,7 +402,7 @@ Drop down menu
   outline: none;
   border: none;
   transition: 0.4s ease;
-  color: white;
+  color: #FFFFF0;
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -399,7 +410,44 @@ Drop down menu
   display: block;
 }
 
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #FFFFF0;
+  height: 100px;
+  width: 100%;
+}
+
 /* MEDIA QUERIES -------- */
+
+@media (min-width: 360px) {
+  .container-text {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-1 {
+  width: 100%;
+}
+
+#cfg {
+  margin-top: 1.5rem;
+}
+}
+
+@media (min-width: 420px) {
+  h1 {
+    font-size: 85px;
+  }
+
+  h2 {
+    font-size: 53px;
+  }
+}
 
 @media (min-width: 500px) {
 
@@ -416,7 +464,7 @@ Drop down menu
     outline: none;
     border: none;
     transition: 0.5s ease;
-    color: white;
+    color: #FFFFF0;
   }
 
   .home-button:hover {
@@ -424,11 +472,11 @@ Drop down menu
     outline: none;
     border: none;
     transition: 0.5s ease;
-    color: white;
+    color: #FFFFF0;
   }
 
   #home-link:hover {
-    color:white;
+    color: #FFFFF0;
   }
 
 }
@@ -476,7 +524,7 @@ Drop down menu
     outline: none;
     border: none;
     transition: 0.5s ease;
-    color: white;
+    color: #FFFFF0;
   }
 
   .project-work:hover {
@@ -506,7 +554,7 @@ Drop down menu
     opacity: 0.7;
     transform: scale(0.9);
     transition: 0.3s ease-in;
-    color: white;
+    color: #FFFFF0;
   }
 
   /* Fade out all items when the parent is hovered */
