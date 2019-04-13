@@ -14,5 +14,5 @@ window.onclick = function(event) {
         openDropdown.classList.remove("appear");
       }
     }
-  } 
+  }
 }
