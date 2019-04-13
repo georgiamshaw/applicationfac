@@ -92,7 +92,7 @@ nav {
 
 .burger-container {
   margin-right: 1rem;
-  margin-top: 8px;
+  margin-top: 6px;
   padding: 13px 8px;
 }
 
@@ -158,7 +158,7 @@ nav {
 .container-1 {
   padding-top: 100px;
   width: 103%;
-  height: 800px;
+  height: 500px;
   background-color: #fffff0;
 }
 
@@ -496,6 +496,9 @@ h6 {
   #home-link:hover {
     color: #FFFFF0;
   }
+
+  .container-1 {
+    height: 800px;
 }
 
 @media (min-width: 712px) {
