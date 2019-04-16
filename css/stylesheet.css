@@ -1,4 +1,4 @@
-dropdown-contenthtml {
+html {
   display: block;
   background-color: #fffff0;
   scroll-behavior: smooth;
@@ -65,7 +65,7 @@ nav {
 
 /* BURGER */
 
-.burger-container {
+.burger-drop {
   margin-right: 1rem;
   margin-top: 6px;
   padding: 13px 8px;
@@ -90,6 +90,8 @@ nav {
   margin: 6px 0;
   transition: 0.4s;
 }
+
+/* CHANGES TO BURGER */
 
 .change .bar1 {
   transform: rotate(-45deg) translate(-7.5px, 7px);
@@ -137,9 +139,15 @@ nav {
   background-color: #fffff0;
 }
 
+/*container text is in all containers*/
+.container-text {
+  margin: 30px 0px;
+  padding: 2px;
+}
+
 h1 {
   font-family: 'PT Mono', monospace;
-  color: #FF4900;
+  color: #4056A1;
   font-size: 55px;
   text-align: left;
   margin: 10% 3% 5% 3%;
@@ -148,7 +156,7 @@ h1 {
 h2 {
   font-family: 'PT Mono', monospace;
   font-size: 40px;
-  color: #FF5A19;
+  color: #4c9ad6;
   text-align: left;
   margin: 6% 3% 8% 3%;
 }
@@ -162,6 +170,13 @@ h2 {
 }
 
 /*SECOND CONTAINER*/
+.container-2 {
+  width: 100%;
+  height: 1000px;
+  background-color: #9BCEF5;
+}
+
+/*h3 in all containers except first one*/
 
 h3 {
   font-family: 'PT Mono', monospace;
@@ -177,26 +192,21 @@ h3 {
 }
 
 #photo-gallery-title {
-color: #FF4900;;
+color: #4c9ad6;
 }
 
 #links-title {
  color: #FFFFF0;
 }
 
-.container-2 {
-  width: 100%;
-  height: 1000px;
-  background-color: #9BCEF5;
-}
-
-p {
-  color: #5ba05b;
-}
-
 .about-me-text {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 20px;
+}
+
+p {
+  color: #000000;
+  padding: 2% 5%;
 }
 
 /*THIRD CONTAINER*/
@@ -213,11 +223,6 @@ p {
   width: 100%;
   height: 1650px;
   background-color: #9BCEF5;
-}
-
-.container-text {
-  margin: 30px 0px;
-  padding: 2px;
 }
 
 .project-work-title {
@@ -262,7 +267,6 @@ h4 {
   box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.2);
   justify-content: center;
   align-items: flex-end;
-  justify-content: center;
   flex-flow: column wrap;
 }
 
@@ -313,7 +317,6 @@ h4 {
   margin-top: 2rem;
   flex: 0 1 auto;
   height: 50%;
-
 }
 
 a {
@@ -341,12 +344,6 @@ Drop down menu
   margin-right: 1rem;
   display: none;
   padding: 11px 4px 10px;
-}
-
-.menu-button:hover, .menu-button:focus {
-  outline: none;
-  border: none;
-  transition: 0.5s ease;
 }
 
 /* Dropdown Content - hidden */
@@ -387,18 +384,12 @@ Drop down menu
 }
 
 .show {
-  position: absolute;
-  left: 0;
-  top: 0;
+  display: block;
   width: 100%;
-  height: 100vh;
-  flex-flow: column;
-  text-align: left;
-  background: #fff;
-  padding-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 76px;
 }
 
 footer {
@@ -430,7 +421,9 @@ h6 {
   padding-bottom: 2%;
 }
 
-/* MEDIA QUERIES -------- */
+/* MEDIA QUERIES */
+
+/* FIRST MEDIA QUERY */
 
 @media (min-width: 360px) {
   .container-text {
@@ -447,6 +440,8 @@ h6 {
 }
 }
 
+/* SECOND MEDIA QUERY */
+
 @media (min-width: 420px) {
   h1 {
     font-size: 85px;
@@ -457,8 +452,13 @@ h6 {
   }
 }
 
+/* THIRD MEDIA QUERY */
+
 @media (min-width: 500px) {
 
+  .burger-drop {
+    display: none;
+  }
   .burger-container {
     display: none;
   }
@@ -491,6 +491,8 @@ h6 {
     height: 800px;
 }
 
+/* FOURTH MEDIA QUERY */
+
 @media (min-width: 712px) {
   .container-4 {
     height: 1000px;
@@ -506,6 +508,7 @@ h6 {
   }
 }
 
+/* FIFTH MEDIA QUERY */
 
 @media (min-width: 1000px) and (max-width: 1099px) {
 
@@ -522,6 +525,8 @@ h6 {
   }
 }
 
+/* SIXTH MEDIA QUERY */
+
 @media (min-width: 1100px) and (max-width: 1383px) {
 
   .container-4 {
@@ -537,23 +542,14 @@ h6 {
   }
 }
 
+/* SEVENTH MEDIA QUERY */
+
 @media (min-width: 1384px) {
   .container-4 {
     height: 832px;
   }
 }
-
-
-  .menu-button:hover {
-    background-color: #4056A1;
-    display: flex;
-    position: relative;
-    outline: none;
-    border: none;
-    transition: 0.5s ease;
-    color: #FFFFF0;
-  }
-
+/*----------------------*/
   .project-work:hover {
     display: flex;
     position: relative;
