@@ -69,6 +69,7 @@ nav {
   margin-right: 1rem;
   margin-top: 6px;
   padding: 13px 8px;
+  cursor: pointer;
 }
 
 .bar-container {
@@ -207,6 +208,7 @@ color: #4c9ad6;
 p {
   color: #000000;
   padding: 2% 5%;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 /*THIRD CONTAINER*/
@@ -310,6 +312,11 @@ h4 {
   background-color: #2f3961;
 }
 
+.icon-a {
+  width: 100%;
+  height: 100%;
+}
+
 .icon {
   display: flex;
   flex-direction: column;
@@ -321,8 +328,6 @@ h4 {
 
 a {
   text-decoration: none;
-  height: 100%;
-  width: 100%
 }
 
 #home-link:visited {
@@ -443,6 +448,7 @@ h6 {
 /* SECOND MEDIA QUERY */
 
 @media (min-width: 420px) {
+
   h1 {
     font-size: 85px;
   }
@@ -454,13 +460,36 @@ h6 {
 
 /* THIRD MEDIA QUERY */
 
+@media (max-width: 499px) {
+
+  .appear {
+    height: 100vh;
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+  .dropdown-content a {
+    text-align: center;
+    padding: 20% 0%;
+    font-size: 40px;
+  }
+}
+
+/* FOURTH MEDIA QUERY */
+
 @media (min-width: 500px) {
 
   .burger-drop {
     display: none;
   }
+
   .burger-container {
     display: none;
+  }
+
+  .appear {
+    display: block;
   }
 
   .menu-button {
@@ -489,9 +518,10 @@ h6 {
 
   .container-1 {
     height: 800px;
+  }
 }
 
-/* FOURTH MEDIA QUERY */
+/* FIFTH MEDIA QUERY */
 
 @media (min-width: 712px) {
   .container-4 {
@@ -508,7 +538,7 @@ h6 {
   }
 }
 
-/* FIFTH MEDIA QUERY */
+/* SIXTH MEDIA QUERY */
 
 @media (min-width: 1000px) and (max-width: 1099px) {
 
@@ -525,7 +555,7 @@ h6 {
   }
 }
 
-/* SIXTH MEDIA QUERY */
+/* SEVENTH MEDIA QUERY */
 
 @media (min-width: 1100px) and (max-width: 1383px) {
 
@@ -542,13 +572,14 @@ h6 {
   }
 }
 
-/* SEVENTH MEDIA QUERY */
+/* EIGHTH MEDIA QUERY */
 
 @media (min-width: 1384px) {
   .container-4 {
     height: 832px;
   }
 }
+
 /*----------------------*/
   .project-work:hover {
     display: flex;
