@@ -2,13 +2,27 @@
 var header = document.getElementById("nav-content");
 var sticking = header.offsetTop;
 
-
 window.onscroll = function() {navScrolling()};
 
 function navScrolling() {
-  if (window.pageYOffset > sticking) {
-    header.classList.add("nav-scroll");
-  } else {
-    header.classList.remove("nav-scroll");
+  var scrollTop = document.documentElement.scrollTop;
+
+  header.classList.add("nav-shadow");
+
+  if (window.pageYOffset <= sticking) {
+    header.classList.remove("nav-shadow");
   }
+  else {
+    header.classList.add("nav-shadow");
+
+    if ((scrollTop > 830 && scrollTop < 2230) || scrollTop > 3065 && scrollTop < 4320) {
+      header.classList.add("nav-move");
+      header.classList.remove("nav-scroll");
+    } else {
+      header.classList.add("nav-scroll");
+      header.classList.remove("nav-move");
+    }
+  }
+
+
 }
