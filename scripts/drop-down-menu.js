@@ -4,27 +4,21 @@ const burger = document.getElementById("burger-container");
 const dropDown = document.getElementById("dropDownMenu");
 
 menuButton.addEventListener("click", function(e) {
-
-    menuButton.classList.toggle("change");
-    dropDown.classList.toggle("appear");
-    console.log('clicked');
+  menuButton.classList.toggle("change");
+  dropDown.classList.toggle("appear");
+  console.log('clicked');
 }, false);
 
 burger.addEventListener("click", function(e) {
-    burger.classList.toggle("change");
-    dropDown.classList.toggle("appear");
-    console.log('clicked');
+  burger.classList.toggle("change");
+  dropDown.classList.toggle("appear");
+  console.log('clicked');
 }, false);
 
 // Close the dropdown menu if someone clicks outside of it
 window.onclick = function(event) {
-
 if (!event.target.matches("#menu-button")) {
-console.log("close-menu");
-
-
-        dropDown.classList.remove("appear");
-
-
+  console.log("close-menu");
+  dropDown.classList.remove("appear");
   }
 }
