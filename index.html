@@ -27,10 +27,10 @@
           </div>
           <button class="menu-button" id="menu-button">Menu</button>
           <div id="dropDownMenu" class="dropdown-content">
-                  <a href="#about-me-title" class="menu-drop">About Me</a>
-                  <a href="#photo-gallery-title" class="menu-drop">Photo<br>Gallery</a>
-                  <a href="#my-website-title" class="menu-drop">About My Website</a>
-                  <a href="#links-title" class="menu-drop">Links</a>
+            <a href="#about-me-title" class="menu-drop">About Me</a>
+            <a href="#photo-gallery-title" class="menu-drop">Photo<br>Gallery</a>
+            <a href="#my-website-title" class="menu-drop">About My Website</a>
+            <a href="#links-title" class="menu-drop">Links</a>
           </div>
         </div>
       </nav>
@@ -106,33 +106,68 @@
       </div>
     </section>
     <section class="container-3">
-      <div class="container-text">
         <div class="photo-gallery">
           <h3 id="photo-gallery-title">Photo Gallery</h3>
         </div>
-        <div class="image-carousel-container">
-        <div class="image-inside-carousel">
-              <img src="#" style="width:100%">
+        <div id="image-container">
+        	<div class="image show fade" id="image-1">
+        		<img src="images/image1.jpg" style="width:100%">
+        	</div>
+        	<div class="image fade" id="image-2">
+        		<img src="images/image2.jpg" style="width:100%">
+        	</div>
+        	<div class="image fade" id="image-3">
+        		<img src="images/image3.jpg" style="width:100%">
+        	</div>
+          <div class="image fade" id="image-4">
+        		<img src="images/image4.jpg" style="width:100%">
+        	</div>
+          <div class="image" id="image-5">
+            <img src="images/image5.jpg" style="width:100%">
+          </div>
+          <div class="image" id="image-6">
+            <img src="images/image6.jpg" style="width:100%">
+          </div>
+          <div class="image" id="image-7">
+            <img src="images/image7.jpg" style="width:100%">
+          </div>
+          <div class="image" id="image-8">
+            <img src="images/image8.jpg" style="width:100%">
+          </div>
+          <div class="image" id="image-9">
+            <img src="images/image9.jpg" style="width:100%">
+          </div>
+        	<a id="prev-button-wrap">
+        		<div id="prev-button">&#8249;</div>
+        	</a>
+        	<a id="next-button-wrap">
+        		<div id="next-button">&#8250;</div>
+        	</a>
+        	<div id="play-pause">
+        		<a id="play-button">&#9654;</a>
+        	<div id="pause-button">
+        		<a id="pause-button-1">&#9646;</a>
+        		<a id="pause-button-2">&#9646;</a>
+        	</div>
+        	</div>
+        	<div class="dot-container">
+        		<span class="image-dot active" id="dot-1"></span>
+        		<span class="image-dot" id="dot-2"></span>
+        		<span class="image-dot" id="dot-3"></span>
+            <span class="image-dot" id="dot-4"></span>
+            <span class="image-dot" id="dot-5"></span>
+        		<span class="image-dot" id="dot-6"></span>
+            <span class="image-dot" id="dot-7"></span>
+            <span class="image-dot" id="dot-8"></span>
+        		<span class="image-dot" id="dot-9"></span>
+        	</div>
+        	<div id="descriptive-text">
+        		<h2 class="image-text show">This is an image</h2>
+        		<h2 class="image-text">This is another image</h2>
+        		<h2 class="image-text">This is one more image</h2>
+            <h2 class="image-text">This is one more image</h2>
+        	</div>
         </div>
-        <div class="image-inside-carousel">
-            <img src="#" style="width:100%">
-        </div>
-        <div class="image-inside-carousel">
-            <img src="#" style="width:100%">
-        </div>
-        <div>
-          <img src="#" class="previous-arrow" style="width:100%"></a>
-          <img src="#" class"next-arrow" style="width:100%"></a>
-        </div>
-        <div>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-        </div>
-        </div>
-    </div>
     </section>
     <section class="container-4">
       <div class="container-text">
@@ -218,5 +253,6 @@
     <script src="scripts/typeWriter.js"></script>
     <script src="scripts/nav-scroll.js"></script>
     <script src="scripts/drop-down-menu.js"></script>
+    <script src="scripts/image-carousel.js"></script>
   </body>
 <html>
