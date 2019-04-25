@@ -17,7 +17,8 @@ burger.addEventListener("click", function(e) {
 
 // Close the dropdown menu if someone clicks outside of it
 window.onclick = function(event) {
-if (!event.target.matches("#menu-button")) {
+  var a = window.matchMedia("(min-width: 500px)")
+if (a.matches && !event.target.matches("#menu-button")) {
   console.log("close-menu");
   dropDown.classList.remove("appear");
   }

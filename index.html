@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico"/>
     <title>F&C Application 2019</title>
   </head>
   <body>
@@ -109,64 +109,80 @@
         <div class="photo-gallery">
           <h3 id="photo-gallery-title">Photo Gallery</h3>
         </div>
-        <div id="image-container">
-        	<div class="image show fade" id="image-1">
-        		<img src="images/image1.jpg" style="width:100%">
-        	</div>
-        	<div class="image fade" id="image-2">
-        		<img src="images/image2.jpg" style="width:100%">
-        	</div>
-        	<div class="image fade" id="image-3">
-        		<img src="images/image3.jpg" style="width:100%">
-        	</div>
-          <div class="image fade" id="image-4">
-        		<img src="images/image4.jpg" style="width:100%">
-        	</div>
-          <div class="image" id="image-5">
-            <img src="images/image5.jpg" style="width:100%">
+        <div id="image-carousel-container">
+          <div id="image-container">
+          	<div class="image show fade" id="image-1">
+          		<img src="images/carousel/image1.jpg" style="width:100%">
+          	</div>
+          	<div class="image fade" id="image-2">
+          		<img src="images/carousel/image2.jpg" style="width:100%">
+          	</div>
+          	<div class="image fade" id="image-3">
+          		<img src="images/carousel/image3.jpg" style="width:100%">
+          	</div>
+            <div class="image fade" id="image-4">
+          		<img src="images/carousel/image4.jpg" style="width:100%">
+          	</div>
+            <div class="image" id="image-5">
+              <img src="images/carousel/image5.jpg" style="width:100%">
+            </div>
+            <div class="image" id="image-6">
+              <img src="images/carousel/image6.jpg" style="width:100%">
+            </div>
+            <div class="image" id="image-7">
+              <img src="images/carousel/image7.jpg" style="width:100%">
+            </div>
+            <div class="image" id="image-8">
+              <img src="images/carousel/image8.jpg" style="width:100%">
+            </div>
+            <div class="image" id="image-9">
+              <img src="images/carousel/image9.jpg" style="width:100%">
+            </div>
+          	<div id="play-pause">
+          		<a id="play-button">&#9654;</a>
+          	<div id="pause-button">
+          		<a id="pause-button-1">&#9646;</a>
+          		<a id="pause-button-2">&#9646;</a>
+          	</div>
+          	</div>
           </div>
-          <div class="image" id="image-6">
-            <img src="images/image6.jpg" style="width:100%">
-          </div>
-          <div class="image" id="image-7">
-            <img src="images/image7.jpg" style="width:100%">
-          </div>
-          <div class="image" id="image-8">
-            <img src="images/image8.jpg" style="width:100%">
-          </div>
-          <div class="image" id="image-9">
-            <img src="images/image9.jpg" style="width:100%">
-          </div>
-        	<a id="prev-button-wrap">
-        		<div id="prev-button">&#8249;</div>
-        	</a>
-        	<a id="next-button-wrap">
-        		<div id="next-button">&#8250;</div>
-        	</a>
-        	<div id="play-pause">
-        		<a id="play-button">&#9654;</a>
-        	<div id="pause-button">
-        		<a id="pause-button-1">&#9646;</a>
-        		<a id="pause-button-2">&#9646;</a>
-        	</div>
-        	</div>
-        	<div class="dot-container">
-        		<span class="image-dot active" id="dot-1"></span>
-        		<span class="image-dot" id="dot-2"></span>
-        		<span class="image-dot" id="dot-3"></span>
+          <a id="prev-button-wrap">
+            <div id="prev-button">&#8249;</div>
+          </a>
+          <a id="next-button-wrap">
+            <div id="next-button">&#8250;</div>
+          </a>
+          <div class="dot-container">
+            <span class="image-dot active" id="dot-1"></span>
+            <span class="image-dot" id="dot-2"></span>
+            <span class="image-dot" id="dot-3"></span>
             <span class="image-dot" id="dot-4"></span>
             <span class="image-dot" id="dot-5"></span>
-        		<span class="image-dot" id="dot-6"></span>
+            <span class="image-dot" id="dot-6"></span>
             <span class="image-dot" id="dot-7"></span>
             <span class="image-dot" id="dot-8"></span>
-        		<span class="image-dot" id="dot-9"></span>
-        	</div>
-        	<div id="descriptive-text">
-        		<h2 class="image-text show">This is an image</h2>
-        		<h2 class="image-text">This is another image</h2>
-        		<h2 class="image-text">This is one more image</h2>
-            <h2 class="image-text">This is one more image</h2>
-        	</div>
+            <span class="image-dot" id="dot-9"></span>
+          </div>
+            <h5 class="image-text show">2013: This is Yogesh, one of my students
+            when I taught at Gairutpur Baas Panchayat Primary School in Gurgaon,
+            India.</h5>
+            <h5 class="image-text">2013: A photograph of a flower found in the grounds
+              of Gairutpur Baas School in India.</h5>
+            <h5 class="image-text">2013: A day trip to Agra to see the splendid Taj
+              Mahal!</h5>
+            <h5 class="image-text">2013: My fellow volunteers wearing white and
+              celebrating the religious holiday of Shavuot on kibbutz Geva.</h5>
+            <h5 class="image-text">2013: A couple sing and play music on a Friday
+              evening in Jerusalem. Taken on a weekend break from volunteering on
+            the kibbutz.</h5>
+            <h5 class="image-text">2013: The beautiful, golden dome of the Dome
+              of the Rock. Taken from the staircase leading to the Western Wall.</h5>
+            <h5 class="image-text">2013: The candles of the Church of the Holy
+              Sepulchre.</h5>
+            <h5 class="image-text">2013: Herbs, spices and candles holders. On
+              sale at the Grand Bazaar, in Istanbul, Turkey.</h5>
+            <h5 class="image-text">2014: Some street art in Sao Paulo. Taken
+              on a visit to Brazil which coincided with the FIFA World Cup.</h5>
         </div>
     </section>
     <section class="container-4">
@@ -221,25 +237,25 @@
         <div id="wrap-links">
           <div class="project-work" id="project-work-fcc">
             <a href="https://www.freecodecamp.org/gigi.io" target="_blank" class="icon-a">
-            <img src="fcc.svg" style="width:100%" class="icon">
+            <img src="images/linkIcons/fcc.svg" style="width:100%" class="icon">
             <h5 id="fcc">Freecodecamp</h5>
             </a>
           </div>
           <div class="project-work" id="project-work-cw">
             <a href="https://www.codewars.com/users/georgiamshaw" target="_blank" class="icon-a">
-            <img src="codewars.svg" style="width:100%" class="icon">
+            <img src="images/linkIcons/codewars.svg" style="width:100%" class="icon">
             <h5 id="codewars">Code Wars</h5>
             </a>
           </div>
           <div class="project-work" id="project-work-gh">
             <a href="https://github.com/georgiamshaw/fac" target="_blank" class="icon-a">
-            <img src="github.svg" style="width:100%" class="icon">
+            <img src="images/linkIcons/github.svg" style="width:100%" class="icon">
             <h5 id="github">GitHub</h5>
             </a>
           </div>
           <div class="project-work" id="project-work-cfg">
             <a href="https://georgiamshaw.github.io/Wine/index.html" target="_blank" class="icon-a">
-            <img src="cfg.svg" style="width:100%" class="icon" id="cfg-icon">
+            <img src="images/linkIcons/cfg.svg" style="width:100%" class="icon" id="cfg-icon">
             <h5 id="cfg">Code First Girls<br>Level 1: HTML and CSS</h5>
             </a>
           </div>

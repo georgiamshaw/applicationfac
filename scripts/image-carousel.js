@@ -86,6 +86,12 @@ document.addEventListener("keydown", function(move) {
 const dot1 = document.getElementById("dot-1");
 const dot2 = document.getElementById("dot-2");
 const dot3 = document.getElementById("dot-3");
+const dot4 = document.getElementById("dot-4");
+const dot5 = document.getElementById("dot-5");
+const dot6 = document.getElementById("dot-6");
+const dot7 = document.getElementById("dot-7");
+const dot8 = document.getElementById("dot-8");
+const dot9 = document.getElementById("dot-9");
 
 dot1.addEventListener("click", pauseAutoImages);
 dot1.addEventListener("click", nextImage);
@@ -93,3 +99,15 @@ dot2.addEventListener("click", pauseAutoImages);
 dot2.addEventListener("click", nextImage);
 dot3.addEventListener("click", pauseAutoImages);
 dot3.addEventListener("click", nextImage);
+dot4.addEventListener("click", pauseAutoImages);
+dot4.addEventListener("click", nextImage);
+dot5.addEventListener("click", pauseAutoImages);
+dot5.addEventListener("click", nextImage);
+dot6.addEventListener("click", pauseAutoImages);
+dot6.addEventListener("click", nextImage);
+dot7.addEventListener("click", pauseAutoImages);
+dot7.addEventListener("click", nextImage);
+dot8.addEventListener("click", pauseAutoImages);
+dot8.addEventListener("click", nextImage);
+dot9.addEventListener("click", pauseAutoImages);
+dot9.addEventListener("click", nextImage);
