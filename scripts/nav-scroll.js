@@ -1,14 +1,14 @@
 
 var header = document.getElementById("nav-content");
 var stay = header.offsetTop;
-var minB = window.matchMedia("(min-width: 1400px)");
+var minC = window.matchMedia("(min-width: 1400px)");
 
 window.onscroll = function() {
   header.classList.add("nav-shadow");
   header.classList.add("nav-scroll");
   if (window.pageYOffset <= stay) {
     header.classList.remove("nav-shadow");
-  } else if (minB.matches) {
+  } else if (minC.matches) {
   navScrolling();
   }
 }

@@ -1,5 +1,7 @@
 // Click on the button to toggle between hiding and showing content
-const menuButton = document.getElementById("menu-button");
+
+// MENU BUTTON ALREADY DECLARED IN TYPEWRITER.JS
+
 const burger = document.getElementById("burger-container");
 const dropDown = document.getElementById("dropDownMenu");
 

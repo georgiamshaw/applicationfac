@@ -54,7 +54,6 @@ function nextImage() {
 
 function prevImage() {
   autoplayImages(currentSlide - 1);
-  autoplayImages(currentDot - 1);
 }
 
 const next = document.getElementById("next-button-wrap");

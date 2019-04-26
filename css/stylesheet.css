@@ -59,6 +59,7 @@ nav {
   outline: none;
   margin-left: 1rem;
   padding: 11px 5px 10px 4px;
+  opacity: 0;
 }
 
 .home-button:hover {
@@ -394,6 +395,7 @@ Drop down menu
   margin-right: 1rem;
   display: none;
   padding: 11px 4px 10px;
+  opacity: 0;
 }
 
 /* Dropdown Content - hidden */
@@ -517,7 +519,7 @@ h6 {
 
   .dropdown-content a {
     text-align: center;
-    padding: 12% 0%;
+    padding: 10% 0%;
     font-size: 35px;
   }
 }
@@ -678,7 +680,7 @@ h6 {
 
 
 /* MEDIA QUERIES FOR RESPONSIVE CONTAINERS  */
-@media (min-width: 310px) and (max-width: 325px) {
+@media (min-width: 310px) and (max-width: 318px) {
   .container-2 {
     height: 3650px;
   }
@@ -688,9 +690,19 @@ h6 {
   }
 }
 
-@media (min-width: 326px) and (max-width: 341px) {
+@media (min-width: 319px) and (max-width: 331px) {
   .container-2 {
-    height: 3480px;
+    height: 3560px;
+  }
+
+  .container-4 {
+    height: 2380px;
+  }
+}
+
+@media (min-width: 332px) and (max-width: 341px) {
+  .container-2 {
+    height: 3450px;
   }
 
   .container-4 {
@@ -709,6 +721,10 @@ h6 {
 }
 
 @media (min-width: 360px) and (max-width: 377px) {
+  h1 {
+    margin-top: 10%;
+  }
+
   .container-2 {
     height: 3550px;
   }
