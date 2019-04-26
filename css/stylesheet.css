@@ -78,6 +78,7 @@ nav {
   margin-top: 6px;
   padding: 13px 8px;
   cursor: pointer;
+  opacity: 0;
 }
 
 .bar-container {

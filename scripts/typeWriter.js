@@ -12,6 +12,7 @@ var speed = 90;
 var speed1 = 65;
 var homeButton = document.querySelector(".home-button");
 var menuButton = document.querySelector(".menu-button");
+var burgerButton = document.querySelector(".burger-drop");
 
 function typeWriter() {
   if (i < typeWriterH1.length) {
@@ -31,5 +32,7 @@ function typeWriter() {
     homeButton.style.transition = "opacity 2s";
     menuButton.style.opacity = "1.0";
     menuButton.style.transition = "opacity 2s";
+    burgerButton.style.opacity = "1.0";
+    burgerButton.style.transition = "opacity 2s";
   }
 } typeWriter();
