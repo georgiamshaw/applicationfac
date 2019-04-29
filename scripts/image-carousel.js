@@ -1,5 +1,4 @@
-
-// AUTOPLAY //
+// DECLARATIONS //
 
 const slides = document.querySelectorAll("#image-container .image");
 const dots = document.getElementsByClassName("image-dot");
@@ -7,19 +6,69 @@ const text = document.getElementsByClassName("image-text");
 var currentSlide = 0;
 var currentDot = 0;
 var currentText = 0;
-var imageInterval = setInterval(autoplayImages, 4000);
+var imageInterval = setInterval(nextImage, 3000); // AMOUNT OF SECONDS IT STAYS ON EACH IMAGE
+const prev = document.querySelector("#prev-button-wrap");
+const next = document.querySelector("#next-button-wrap");
 
-function autoplayImages() {
-    slides[currentSlide].className = "image";
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].className = "image show";
-    dots[currentDot].className = "image-dot";
-    currentDot = (currentDot + 1) % dots.length;
-    dots[currentDot].className = "image-dot active";
-    text[currentText].className = "image-text";
-    currentText = (currentText + 1) % text.length;
-    text[currentText].className = "image-text show";
+// CLICK PREVIOUS SLIDE //
+
+function prevImage() {
+  if (currentSlide == 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide--;
+  }
+  document.querySelector(".image.show").classList.remove("show");
+  slides[currentSlide].classList.add("show");
+  document.querySelector(".image-dot.active").classList.remove("active");
+  dots[currentSlide].classList.add("active");
+  document.querySelector(".image-text.show").classList.remove("show");
+  text[currentSlide].classList.add("show");
 }
+
+prev.onclick = function() {
+  pauseAutoImages()
+  prevImage();
+  console.log("previous image");
+};
+
+// CLICK NEXT SLIDE //
+
+function nextImage() {
+  if (currentSlide == slides.length - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+
+  document.querySelector(".image.show").classList.remove("show");
+  slides[currentSlide].classList.add("show");
+  document.querySelector(".image-dot.active").classList.remove("active");
+  dots[currentSlide].classList.add("active");
+  document.querySelector(".image-text.show").classList.remove("show");
+  text[currentSlide].classList.add("show");
+}
+
+next.onclick = function() {
+  pauseAutoImages()
+  nextImage();
+  console.log("next image");
+};
+
+// KEYBOARD NAVIGATION //
+
+document.addEventListener("keydown", function(move) {
+  if (move.keyCode == 39) {
+    pauseAutoImages()
+    nextImage("next-button");
+    console.log("right click with key");
+  }
+  else if (move.keyCode == 37) {
+    pauseAutoImages()
+    prevImage("prev-button");
+    console.log("left click with key");
+  }
+});
 
 // PLAY AND PAUSE //
 
@@ -27,17 +76,20 @@ const playPauseButton = document.getElementById("play-pause");
 var playingImages = true;
 
 function pauseAutoImages() {
-  playingImages = false;
+  playingImages = false; // IF IMAGES ARE NOT PLAYING
   clearInterval(imageInterval);
+  play.style.display = "block";
+  pause.style.display = "none"; // REMOVE AUTOPLAY
   console.log("pause images");
 }
 
 function playAutoImages() {
-  playingImages = true;
-  imageInterval = setInterval(nextImage, 4000);
+  playingImages = true; // IF IMAGES ARE PLAYING
+  imageInterval = setInterval(nextImage, 3000); // KEEP AUTOPLAY
   console.log("play images");
 }
 
+// IF IMAGES ARE NOT PLAYING, START THEM, AND IF THEY ARE, PAUSE THEM //
 playPauseButton.onclick = function() {
   if (playingImages == false) {
     playAutoImages();
@@ -46,67 +98,31 @@ playPauseButton.onclick = function() {
   }
 };
 
-// CLICK NEXT AND PREVIOUS SLIDE //
+const play = document.getElementById("play-button");
+const pause = document.getElementById("pause-button");
 
-function nextImage() {
-  autoplayImages(currentSlide + 1);
-}
-
-function prevImage() {
-  autoplayImages(currentSlide - 1);
-}
-
-const next = document.getElementById("next-button-wrap");
-const prev = document.getElementById("prev-button-wrap");
-
-next.addEventListener("click", pauseAutoImages);
-next.addEventListener("click", nextImage);
-prev.addEventListener ("click", pauseAutoImages)
-prev.addEventListener ("click", prevImage);
-
-// KEYBOARD NAVIGATION //
-
-document.addEventListener("keydown", function(move) {
-  if (move.keyCode == 39) {
-    pauseAutoImages();
-    nextImage("next-button");
-    console.log("right click with key");
-  }
-  else if (move.keyCode == 37) {
-    pauseAutoImages();
-    prevImage("prev-button");
-    console.log("left click with key");
-  }
+play.addEventListener("click", function() {
+  pause.style.display = "block";
+  play.style.display = "none";
 });
 
+pause.addEventListener("click", function() {
+  play.style.display = "block";
+  pause.style.display = "none";
+});
 
-// SHOW IMAGE ACCORDING TO DOT //
+// CHOOSE IMAGE ACCORDING TO CORRESPONDING DOT //
 
-const dot1 = document.getElementById("dot-1");
-const dot2 = document.getElementById("dot-2");
-const dot3 = document.getElementById("dot-3");
-const dot4 = document.getElementById("dot-4");
-const dot5 = document.getElementById("dot-5");
-const dot6 = document.getElementById("dot-6");
-const dot7 = document.getElementById("dot-7");
-const dot8 = document.getElementById("dot-8");
-const dot9 = document.getElementById("dot-9");
-
-dot1.addEventListener("click", pauseAutoImages);
-dot1.addEventListener("click", nextImage);
-dot2.addEventListener("click", pauseAutoImages);
-dot2.addEventListener("click", nextImage);
-dot3.addEventListener("click", pauseAutoImages);
-dot3.addEventListener("click", nextImage);
-dot4.addEventListener("click", pauseAutoImages);
-dot4.addEventListener("click", nextImage);
-dot5.addEventListener("click", pauseAutoImages);
-dot5.addEventListener("click", nextImage);
-dot6.addEventListener("click", pauseAutoImages);
-dot6.addEventListener("click", nextImage);
-dot7.addEventListener("click", pauseAutoImages);
-dot7.addEventListener("click", nextImage);
-dot8.addEventListener("click", pauseAutoImages);
-dot8.addEventListener("click", nextImage);
-dot9.addEventListener("click", pauseAutoImages);
-dot9.addEventListener("click", nextImage);
+for (var i = 0; i < dots.length; i++) {
+ (function(dotsMove){
+    dots[i].onclick = function() {
+      if (dotsMove !== currentSlide) {
+        document.querySelector(".image-dot.active").classList.remove("active");
+        this.classList.add("active");
+        document.querySelector(".image.show").classList.remove("show");
+        slides[dotsMove].classList.add("show");
+        currentSlide = dotsMove;
+      }
+   }
+ })(i);
+}
