@@ -20,7 +20,7 @@ function navScrolling() {
       header.classList.remove("nav-shadow");
     } else {
       header.classList.add("nav-shadow");
-      if ((scrollTop > 830 && scrollTop < 2230) || (scrollTop > 3065 && scrollTop < 4270)) {
+      if ((scrollTop > 830 && scrollTop < 2330) || (scrollTop > 3165 && scrollTop < 4370)) {
         header.classList.add("nav-move");
         header.classList.remove("nav-scroll");
       } else {
