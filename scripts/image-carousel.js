@@ -121,6 +121,9 @@ for (var i = 0; i < dots.length; i++) {
         this.classList.add("active");
         document.querySelector(".image.show").classList.remove("show");
         slides[dotsMove].classList.add("show");
+        document.querySelector(".image-text.show").classList.remove("show");
+        text[dotsMove].classList.add("show");
+        pauseAutoImages();
         currentSlide = dotsMove;
       }
    }
