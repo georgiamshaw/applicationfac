@@ -126,3 +126,18 @@ for (var i = 0; i < dots.length; i++) {
    }
  })(i);
 }
+
+// USING SPACEBAR TO PLAY AND PAUSE IMAGE CAROUSEL  //
+
+window.addEventListener("keypress", function (event) {
+    var spacebar = 32;
+    if (event.which == spacebar && playingImages == true) {
+        pauseAutoImages();
+        event.preventDefault();
+    } else if (event.which == spacebar && playingImages == false) {
+        playAutoImages();
+        pause.style.display = "block";
+        play.style.display = "none";
+        event.preventDefault();
+    }
+});
