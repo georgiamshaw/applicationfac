@@ -446,7 +446,6 @@ display: none;
 display: block;
 }
 
-
 /*FOURTH CONTAINER*/
 
 .container-4 {
@@ -588,14 +587,11 @@ a, a:visited {
 
 #wrap-links > * {
   visibility: visible;
-}
-
-#wrap-links > * {
   transition: opacity 150ms linear 100ms, transform 150ms, ease-in-out 200ms;
   transition: visibility 150ms linear 100ms, transform 150ms, ease-in-out 400ms;
 }
 
-/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+/* Makes fade smooth with slight delay to prevent jumps as mouse moves between items */
 
 #wrap-links:hover > * {
   opacity: 0.7;
@@ -604,7 +600,7 @@ a, a:visited {
   color: #FFFFF0;
 }
 
-/* Fade out all items when the parent is hovered */
+/* Fade out all items when parent is hovered */
 
 #wrap-links > *:hover {
   opacity: 1;
@@ -645,9 +641,11 @@ h6 {
   padding-bottom: 2%;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 310px) and (max-width: 318px) {
   .container-2 {
-    height: 3740px;
+    height: 4640px;
   }
 
   .container-4 {
@@ -657,7 +655,7 @@ h6 {
 
 @media (min-width: 319px) and (max-width: 325px) {
   .container-2 {
-    height: 4580px;
+    height: 4600px;
   }
 }
 
@@ -675,7 +673,7 @@ h6 {
 
 @media (min-width: 332px) and (max-width: 341px) {
   .container-2 {
-    height: 4360px;
+    height: 4380px;
   }
 
   .container-4 {
@@ -811,7 +809,7 @@ h6 {
 
 @media (min-width: 342px) and (max-width: 359px) {
   .container-2 {
-    height: 4180px;
+    height: 4220px;
   }
 
   .container-4 {
@@ -840,7 +838,7 @@ h6 {
   }
 
   .container-2 {
-    height: 4500px;
+    height: 4530px;
   }
 
   .container-4 {
@@ -866,7 +864,7 @@ h6 {
 
 @media (min-width: 378px) and (max-width: 399px) {
   .container-2 {
-    height: 4200px;
+    height: 4230px;
   }
 
   .container-4 {
@@ -940,7 +938,7 @@ h6 {
 
 @media (min-width: 400px) and (max-width: 426px) {
   .container-2 {
-    height: 4020px;
+    height: 4035px;
   }
 
   .container-4 {
@@ -996,7 +994,7 @@ h6 {
 
 @media (min-width: 486px) and (max-width: 515px) {
   .container-2 {
-    height: 3310px;
+    height: 3320px;
   }
 
   .container-4 {
@@ -1113,7 +1111,7 @@ h6 {
 
   @media (min-width: 629px) and (max-width: 654px) {
     .container-2 {
-      height: 2610px;
+      height: 2620px;
     }
 
     .container-4 {
@@ -1139,7 +1137,7 @@ h6 {
 
   @media (min-width: 680px) and (max-width: 719px) {
     .container-2 {
-      height: 2450px;
+      height: 2460px;
     }
 
     .container-4 {
@@ -1221,7 +1219,6 @@ h6 {
     left: 18rem;
   }
 }
-
 
 @media (min-width: 700px) and (max-width: 799px) {
   #image-container {
